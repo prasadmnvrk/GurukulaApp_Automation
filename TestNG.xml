@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="GurukulSuite">
+   <test name="GurukulaOperations">
+   
+      <parameter name="loginname" value="admin"/>
+      <parameter name="loginpassword" value="admin"/>
+	  <parameter name="NewBranchName" value="ICICI"/>
+	  <parameter name="NewBranchCode" value="IC1" />
+	  <parameter name="DelBranchName" value="HDFCA"/>
+	  <parameter name="DelBranchCode" value="HF1" />
+	  <parameter name="NewStaff" value="JohnDule" />
+      <classes>
+		<class name="com.gurukula.TestCases.TC_WelcomePage" />
+		<class name="com.gurukula.TestCases.TC_BranchOperations" />
+		<class name="com.gurukula.TestCases.TC_StaffOperations" />
+		<class name="com.gurukula.TestCases.TC_DeleteBranch" />
+		<class name="com.gurukula.TestCases.TC_ValidateAutomaticLogin" />
+	  </classes>
+	</test>
+</suite>

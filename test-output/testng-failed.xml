@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [GurukulSuite]">
+  <parameter name="loginname" value="admin"/>
+  <parameter name="loginpassword" value="admin"/>
+  <parameter name="NewStaff" value="JohnDule"/>
+  <parameter name="NewBranchName" value="ICICI"/>
+  <parameter name="NewBranchCode" value="IC1"/>
+  <test name="GurukulaOperations(failed)">
+    <parameter name="loginname" value="admin"/>
+    <parameter name="loginpassword" value="admin"/>
+    <parameter name="NewStaff" value="JohnDule"/>
+    <parameter name="NewBranchName" value="ICICI"/>
+    <parameter name="NewBranchCode" value="IC1"/>
+    <classes>
+      <class name="com.gurukula.TestCases.TC_WelcomePage">
+        <methods>
+          <include name="BrowserLaunch"/>
+          <include name="CloseSession"/>
+        </methods>
+      </class> <!-- com.gurukula.TestCases.TC_WelcomePage -->
+      <class name="com.gurukula.TestCases.TC_BranchOperations">
+        <methods>
+          <include name="BrowserLaunch"/>
+          <include name="CloseSession"/>
+          <include name="UserLogOut"/>
+          <include name="DeleteBranch"/>
+        </methods>
+      </class> <!-- com.gurukula.TestCases.TC_BranchOperations -->
+    </classes>
+  </test> <!-- GurukulaOperations(failed) -->
+</suite> <!-- Failed suite [GurukulSuite] -->
